@@ -1,0 +1,33 @@
+# Complete list of options here: https://github.com/metabase/metabase/wiki/Metabase-Plugin-Manifest-Reference
+info:
+    name: Metabase MongoDB BI Connector Driver
+    version: 0.0.1-mongobi
+    description: Allows Metabase to connect to MongoDB using the BI Connector. Community Supported driver.
+driver:
+    name: mongobi
+    display-name: MongoDB BI Connector
+    lazy-load: true
+    parent: mysql
+    connection-properties:
+        - merge:
+            - host
+            - placeholder: your-cluster-name-biconnector-abcde.mongodb.net
+        - merge:
+            - port
+            - default: 27015
+        - merge:
+            - dbname
+            - name: db
+              placeholder: events
+        - merge:
+            - user
+            - placeholder: username?source=admin
+        - password
+        - merge:
+            - additional-options
+            - placeholder: "useSSL=true"
+init:
+    - step: load-namespace
+      namespace: metabase.driver.mongobi
+    - step: register-jdbc-driver
+      class: com.mysql.jdbc.Driver

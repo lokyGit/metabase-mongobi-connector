@@ -1,0 +1,32 @@
+Building parent drivers (if needed)...
+Building mongobi driver...
+Leiningen's classpath: :/usr/share/java/leiningen-2.8.1.jar
+Applying task uberjar to []
+Applying task javac to nil
+Running javac with [-target 1.8 -source 1.8 @/tmp/.leiningen-cmdline4296846461842163122.tmp]
+Applying task compile to nil
+Compiling metabase.driver.mongobi
+02-18 09:09:00 DEBUG plugins.classloader :: Using NEWLY CREATED classloader as shared context classloader: clojure.lang.DynamicClassLoader@7c847072
+Created /home/cimcon/gitrep/metabase/modules/drivers/mongobi/target/uberjar+provided/mongobi-driver-0.0.1-mongobi.jar
+Including mongobi-driver-0.0.1-mongobi.jar
+Including mysql-connector-java-5.1.41.jar
+Created /home/cimcon/gitrep/metabase/modules/drivers/mongobi/target/uberjar/mongobi.metabase-driver.jar
+Compiling 1 source files to /home/cimcon/gitrep/metabase/target/default+strip-and-compress+run/classes
+02-18 09:09:19 DEBUG plugins.classloader :: Using Clojure base loader as shared context classloader: clojure.lang.DynamicClassLoader@7c71c889
+02-18 09:09:19 INFO metabase.util :: Loading Metabase...
+02-18 09:09:19 INFO metabase.util :: Maximum memory available to JVM: 1.7 GB
+Stripping duplicate classes and extra-compressing /home/cimcon/gitrep/metabase/modules/drivers/mongobi/target/uberjar/mongobi.metabase-driver.jar...
+Done. wrote: 403 skipped: 32
+Original size: 1008.9 KB
+Stripped/extra-compressed size: 989.5 KB
+Copying to /home/cimcon/gitrep/metabase/modules/drivers/mongobi/target/uberjar/mongobi.metabase-driver.jar...
+Copying /home/cimcon/gitrep/metabase/modules/drivers/mongobi/target/uberjar/mongobi.metabase-driver.jar -> /home/cimcon/gitrep/metabase/resources/modules/mongobi.metabase-driver.jar
+Verifying mongobi driver...
+Checking whether resources/modules/mongobi.metabase-driver.jar exists....
+File exists.
+Checking whether driver contains main class file metabase/driver/mongobi__init.class...
+Main class file found.
+Checking whether driver contains plugin manifest...
+Plugin manifest found.
+Driver verification successful.
+Saving checksum for source files to /home/cimcon/gitrep/metabase/modules/drivers/mongobi/target/checksum.txt
